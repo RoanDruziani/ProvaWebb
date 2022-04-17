@@ -1,25 +1,27 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Segunda pagina</title>
+    <title>Localidade</title>
     <link rel="stylesheet" href="style.css">
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
 </head>
+
 <body>
     <main>
-        
+
         <div class="pg3">
 
             <h1>Localidade</h1>
 
-            <input class="pg3" type="text" name="responsavel" placeholder="Responsavel">
-       
-            <input class="pg3" type="text" name="cep" placeholder="Cep">
+            <input class="pg3" type="text" name="responsavel" placeholder="Responsavel" id="txt-responsavel">
 
-            <select class="estado" name="estado" id="estado">
+            <input maxlength="9" class="pg3" type="text" name="cep" placeholder="Cep" id="txt-cep">
+
+            <select class="estado" name="estado" id="select-estado">
                 <option selected disabled value="">Estado</option>
                 <option value="AC">Acre</option>
                 <option value="AL">Alagoas</option>
@@ -49,38 +51,41 @@
                 <option value="TO">Tocantins</option>
                 <option value="DF">Distrito Federal</option>
             </select>
-    
-            <select class="cidade" name="cidade" id="cidade">
-                <option selected disabled value="" >Cidade</option>
+
+            <select class="cidade" name="cidade" id="select-cidade">
+                <option selected disabled value="">Cidade</option>
                 <option value="1">.....</option>
                 <option value="2">.....</option>
                 <option value="3">.....</option>
             </select>
-            
-            <input class="pg3" type="text" name="bairro" placeholder="Bairro">
 
-            <input class="pg3" type="text" name="rua" placeholder="Rua">
+            <input class="pg3" type="text" name="bairro" placeholder="Bairro" id="txt-Bairro">
 
-            <input class="pg3" type="number" name="numero" placeholder="Numero">
-    
-            <input class="pg3" type="number" name="telefone" placeholder="Numero de telefone">
-       
-            <input class="pg3" type="email" name="email"  placeholder="E-mail">
+            <input class="pg3" type="text" name="rua" placeholder="Rua" id="txt-rua">
+
+            <input class="pg3" type="number" name="numero" placeholder="Numero" id="txt-numero">
+
+            <input maxlength="11" class="pg3" type="number" name="telefone" placeholder="Numero de telefone" id="txt-NumeroTelefone">
+
+            <input class="pg3" type="email" name="email" placeholder="E-mail" id="txt-email">
         </div>
         <div class="pequena">
-            <source media="(min-width: 300px)"> 
-                <img src="imagens/Adote!2.png"  class = "pequena" alt="Adote">
+            <source media="(min-width: 300px)">
+            <img src="imagens/Adote!2.png" class="pequena" alt="Adote">
             <source>
-            
+
         </div>
-        
+
     </main>
 
     <div class="p">
-        <p><a href="pagina02.html"><img src="imagens/seta-para-a-esquerda_Media.png" alt="setaEsquerda"></a></p>
-        <p style="text-align: right;"><a href="pagina04.html"><img src="imagens/seta-para-a-direita _Media.png" alt="setaDireita"></a></p>
+        <p><a href="pagina02.html"><img src="imagens/seta-para-a-esquerda_Media.png" alt="setaEsquerda"></p></a>
+        <p style="text-align: right;"><a> <img src="imagens/seta-para-a-direita _Media.png" alt="setaDireitaa" onclick="validarEtapa02();"></a>
+        </p>
     </div>
-    
-    
+
+    <script src="./script.js"></script>
+
 </body>
+
 </html>

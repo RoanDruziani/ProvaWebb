@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <title>Fim</title>
+  </head>
+  <div>
+    <span id="span-nome"> </span>
+    <span id="span-sobrenome"> </span>
+    <span id="span-nomeAnimal"> </span>
+    <span id="span-tipoAnimal"> </span>
+    <span id="span-porteAnimal"> </span>
+    <span id="span-responsavel"> </span>
+    <span id="span-cep"> </span>
+    <span id="span-estado"> </span>
+    <span id="span-cidade"> </span>
+    <span id="span-rua"> </span>
+    <span id="span-numero"> </span>
+    <span id="span-numeroTelefone"> </span>
+    <span id="span-email"> </span>
+
+  </div>
+  
+  <body>
+    <script>
+      const nome = localStorage.getItem("nome");
+      const sobrenome = localStorage.getItem("sobrenome");
+      const nomeAnimal = localStorage.getItem("nomeAnimal");
+      const tipoAnimal = localStorage.getItem("tipoAnimal");
+      const porteAnimal = localStorage.getItem("porteAnimal");
+      const responsavel = localStorage.getItem("responsavel");
+      const cep = localStorage.getItem("cep");
+      const estado = localStorage.getItem("estado");
+      const cidade = localStorage.getItem("cidade");
+      const rua = localStorage.getItem("rua");
+      const numero = localStorage.getItem("numero");
+      const numeroTelefone = localStorage.getItem("numeroTelefone");
+      const email = localStorage.getItem("email");
+      
+      if (nome && nome !== "") {
+        document.getElementById("span-nome").innerHTML = " nome = " + nome;
+      }
+      if (sobrenome && sobrenome !== "") {
+        document.getElementById("span-sobrenome").innerHTML = " sobrenome  = " + sobrenome;
+      }
+      if (nomeAnimal && nomeAnimal !== "") {
+        document.getElementById("span-nomeAnimal").innerHTML = "nomeAnimal = " + nomeAnimal;
+      }
+      if (tipoAnimal && tipoAnimal !== "") {
+        document.getElementById("span-tipoAnimal").innerHTML = "tipoAnimal = " + tipoAnimal;
+      }
+      if (porteAnimal && porteAnimal !== "") {
+        document.getElementById("span-porteAnimal").innerHTML = "porteAnimal = " + porteAnimal;
+      }
+      if (responsavel && responsavel !== "") {
+        document.getElementById("span-responsavel").innerHTML = "responsavel = " + responsavel;
+      }
+      if (cep && cep !== "") {
+        document.getElementById("span-cep").innerHTML = "cep = " + cep;
+      }
+      if (estado && estado !== "") {
+        document.getElementById("span-estado").innerHTML = "estado = " + estado;
+      }
+      if (cidade && cidade !== "") {
+        document.getElementById("span-cidade").innerHTML = "cidade = " + cidade;
+      }
+      if (rua && rua !== "") {
+        document.getElementById("span-rua").innerHTML = "rua = " + rua;
+      }
+      if (numero && numero !== "") {
+        document.getElementById("span-numero").innerHTML = "numero = " + numero;
+      }
+      if (numeroTelefone && numeroTelefone !== "") {
+        document.getElementById("span-numeroTelefone").innerHTML = "numeroTelefone = " + numeroTelefone;
+      }
+      if (email && email !== "") {
+        document.getElementById("span-email").innerHTML = "email = " + email;
+      }
+    </script>
+  </body>
+</html>

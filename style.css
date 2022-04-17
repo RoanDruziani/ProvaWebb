@@ -1,5 +1,16 @@
 @charset "UTF-8";
 
+.color-text-red-error::placeholder {
+    color: red;
+}
+
+input:focus-visible {
+    outline: unset;
+}
+select:focus-visible{
+    outline: unset;
+}
+
 body{
     margin: auto;
     background-color:#2f4f4f;
@@ -25,6 +36,12 @@ div.pequena{
     width: 30%;
     padding-left: 300px;
 }
+div.index{
+    display: flex;
+    flex-direction: unset;
+    justify-content: center;
+    align-items: center;
+}
 div.pg3{
     margin-top: 30px;
 }
@@ -44,9 +61,8 @@ input{
     background-color: darkslategray;
     border-bottom-left-radius:5px ;
     width: fit-content;
-    border-top-width: 0px;
-    border-left-width: 0px;
-    border-right-width: 0px;
+    border: unset;
+    border-bottom: 2px solid dimgray;
 }
 select{
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
@@ -56,10 +72,9 @@ select{
     margin-top: 5px;
     padding-bottom:10px;
     background-color: darkslategray;
-    border-bottom-left-radius:5px ;
-    border-top-width: 0px;
-    border-left-width: 0px;
-    border-right-width: 0px;
+    border-bottom-left-radius: 5px;
+    border: unset;
+    border-bottom: 2px solid dimgray;
     width: fit-content;
     color: dimgray;
 }
@@ -77,6 +92,11 @@ img.pequena{
     width: 100%;
     height: 30%;
 }
+img.index{
+    display: unset;
+    width: 40%;
+    height: 30%;
+}
 h1{
     text-align: center;
     color: white;
@@ -87,10 +107,26 @@ h2{
     color: burlywood;
 }
 p{
-    text-align: justify;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+button{
+    padding-right: 200px;
+    padding-left: 200px;
+    padding-top:20px ;
+    padding-bottom:20px ;
+    border-radius: 50px;
+    font-size: 25px;
+    background-color:white;
 }
 a{
     color: dimgrey;
+}
+span{
+    color: white;
+    font-size: 40px;
+    margin: 20px;
 }
 
 @media screen and (max-width:1350px) {
@@ -103,11 +139,16 @@ a{
     
 }
 @media screen and (max-width:1200px) {
-
+   
     main{
         flex-direction:column-reverse;
         justify-content: center;
         align-items: center;
+    }
+    body.index{
+        display: flex;
+        flex-direction: column;
+        padding: 10px;
     }
     div{
         display: flex;
@@ -117,13 +158,25 @@ a{
         justify-content: center;
         padding-left: 100px;
     }
-    
-    
+    div.index{
+        display: unset;
+        flex-direction: unset;
+        align-items: unset;
+        justify-content: unset;
+        padding: unset;
+        flex-direction: unset;
+        justify-content: center;
+    }
     div.pequena{
         align-self: center;
         justify-content: center;
         min-width: 400px;
         width: 25%;
+    }
+    img.index{
+        display: unset;
+        width: 20%;
+        height: 20%;
     }
     img.pequena{
         display: block;
@@ -138,15 +191,33 @@ a{
     select.porteAnimal{
         padding-right: 280px;
     }
+    p{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    button{
+
+        padding-right: 200px;
+        padding-left: 200px;
+        padding-top:10px ;
+        padding-bottom:10px ;
+        border-radius: 50px;
+        font-size: 25px;
+        background-color:white;
+    }
     
 }
 @media screen and (max-width:860px) {
-    
+
+    div{
+        padding-left: unset;
+    }
     div.pequena{
         align-items: flex-end;
         min-width: 300px;
         width: 25%;
-        padding-left: 100px;
+        padding-left: unset;
     }
     input{
         padding-right: 180px;
@@ -179,7 +250,7 @@ a{
         padding-right: 326px;
     }
 }
-@media screen and (max-width:300px) {
+@media screen and (max-width:425px) {
 
     input{
         font-size: 13px;
@@ -214,5 +285,15 @@ a{
         color: white;
         font-size: 50px;
         font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    }
+    button{
+
+        padding-right: 100px;
+        padding-left: 100px;
+        padding-top:10px ;
+        padding-bottom:10px ;
+        border-radius: 50px;
+        font-size: 15px;
+        background-color:white;
     }
 }

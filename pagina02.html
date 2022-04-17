@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Segunda pagina</title>
+    <title>Cadastro</title>
     <link rel="stylesheet" href="style.css">
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
 </head>
@@ -19,21 +19,21 @@
             <h1>Cadastro</h1>
 
 
-            <input type="text" name="nome" placeholder="Digite seu nome">
-            <input type="text" name="sobrenome" placeholder="Digite seu sobrenome">
-            <input type="text" name="nomeAnimal" placeholder="Digite o nome do Pet">
+            <input maxlength="50" type="text" name="nome" placeholder="Digite seu nome" id="txt-nome">
+            <input type="text" name="sobrenome" placeholder="Digite seu sobrenome" id="txt-sobrenome">
+            <input type="text" name="nomeAnimal" placeholder="Digite o nome do Pet" id="txt-nomeAnimal">
 
-            <select name="tipoAnimal" id="tipoAnimal">
+            <select name="tipoAnimal" id="select-tipo-animal">
                 <option selected disabled value="">Escolha o Tipo</option>
-                <option value="">Felino</option>
-                <option value="">Canino</option>
+                <option value="Felino">Felino</option>
+                <option value="Canino">Canino</option>
             </select>
 
-            <select name="porteAnimal" id="porteAnimal" class="porteAnimal">
+            <select name="porteAnimal" id="select-porteAnimal" class="porteAnimal">
                 <option selected disabled value="">Porte do Animal</option>
-                <option value="">Pequeno</option>
-                <option value="">Medio</option>
-                <option value="">Grande</option>
+                <option value="Pequeno">Pequeno</option>
+                <option value="Medio">Medio</option>
+                <option value="Grande">Grande</option>
             </select>
         </div>
         <div class="pequena">
@@ -46,11 +46,14 @@
     </main>
     <div class="p">
         <p><a href="index.html"><img src="imagens/seta-para-a-esquerda_Media.png" alt="setaEsquerda"></a></p>
-        <p style="text-align: right;"><a href="pagina03.html"><img src="imagens/seta-para-a-direita _Media.png"
-                    alt="setaDireita"></a></p>
+
+
+        <p style="text-align: right;">
+            <img src="imagens/seta-para-a-direita _Media.png" alt="setaDireita" onclick="validarEtapa01();">
+        </p>
     </div>
 
-
+    <script src="./script.js"></script>
 
 </body>
 

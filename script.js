@@ -1,3 +1,26 @@
+
+const preencherFormulario = (endereco) =>{
+  document.getElementById('txt-Bairro').value = endereco.bairro
+  document.getElementById('select-cidade').value = endereco.localidade
+  document.getElementById('select-estado').value = endereco.uf
+  document.getElementById('txt-rua').value = endereco.logradouro
+}
+
+
+
+const pesquisarCep = async() => {
+
+  const cep = document.getElementById('txt-cep').value;
+  const url = `https://viacep.com.br/ws/${cep}/json/`;
+  const dados = await fetch(url);
+  const endereco = await dados.json();
+  preencherFormulario(endereco);
+
+}
+
+document.getElementById('txt-cep').addEventListener('focusout', pesquisarCep);
+
+
 function validarEtapa01() {
   let formularioValido = true;
   //input

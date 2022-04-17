@@ -11,39 +11,44 @@
 </head>
 
 <body>
-    <main>
+    <form>
 
-        <div class="pg2">
+        <main>
 
+            <div class="pg2">
+    
+    
+                <h1>Cadastro</h1>
+    
+    
+                <input maxlength="50" type="text" name="nome" placeholder="Digite seu nome" id="txt-nome">
+                <input type="text" name="sobrenome" placeholder="Digite seu sobrenome" id="txt-sobrenome">
+                <input type="text" name="nomeAnimal" placeholder="Digite o nome do Pet" id="txt-nomeAnimal">
+    
+                <select name="tipoAnimal" id="select-tipo-animal">
+                    <option selected disabled value="">Escolha o Tipo</option>
+                    <option value="Felino">Felino</option>
+                    <option value="Canino">Canino</option>
+                </select>
+    
+                <select name="porteAnimal" id="select-porteAnimal" class="porteAnimal">
+                    <option selected disabled value="">Porte do Animal</option>
+                    <option value="Pequeno">Pequeno</option>
+                    <option value="Medio">Medio</option>
+                    <option value="Grande">Grande</option>
+                </select>
+            </div>
+            <div class="pequena">
+                <source media="(min-width: 300px)">
+                <img src="imagens/Adote!2.png" class="pequena" alt="Adote">
+                <source>
+    
+            </div>
+    
+        </main>
 
-            <h1>Cadastro</h1>
-
-
-            <input maxlength="50" type="text" name="nome" placeholder="Digite seu nome" id="txt-nome">
-            <input type="text" name="sobrenome" placeholder="Digite seu sobrenome" id="txt-sobrenome">
-            <input type="text" name="nomeAnimal" placeholder="Digite o nome do Pet" id="txt-nomeAnimal">
-
-            <select name="tipoAnimal" id="select-tipo-animal">
-                <option selected disabled value="">Escolha o Tipo</option>
-                <option value="Felino">Felino</option>
-                <option value="Canino">Canino</option>
-            </select>
-
-            <select name="porteAnimal" id="select-porteAnimal" class="porteAnimal">
-                <option selected disabled value="">Porte do Animal</option>
-                <option value="Pequeno">Pequeno</option>
-                <option value="Medio">Medio</option>
-                <option value="Grande">Grande</option>
-            </select>
-        </div>
-        <div class="pequena">
-            <source media="(min-width: 300px)">
-            <img src="imagens/Adote!2.png" class="pequena" alt="Adote">
-            <source>
-
-        </div>
-
-    </main>
+    </form>
+   
     <div class="p">
         <p><a href="index.html"><img src="imagens/seta-para-a-esquerda_Media.png" alt="setaEsquerda"></a></p>
 

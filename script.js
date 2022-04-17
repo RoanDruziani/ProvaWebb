@@ -137,20 +137,18 @@ function validarEtapa02(){
     email.className = "color-text-red-error";
     formularioValido2 = false;
   }
-
-  //select
-
   if (estado.value === "") {
     estado.style.borderBottom = "2px solid red";
-    estado.style.color = "red";
+    estado.className = "color-text-red-error";
     formularioValido2 = false;
   }
   if (cidade.value === "") {
     cidade.style.borderBottom = "2px solid red";
-    cidade.style.color = "red";
+    cidade.className = "color-text-red-error";
     formularioValido2 = false;
-  }  
+  }
 
+  //select
 
   if (formularioValido2) {
 

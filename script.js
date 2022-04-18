@@ -1,5 +1,5 @@
 
-const preencherFormulario = (endereco) =>{
+const preencherFormulario = (endereco) => {
   document.getElementById('txt-Bairro').value = endereco.bairro
   document.getElementById('select-cidade').value = endereco.localidade
   document.getElementById('select-estado').value = endereco.uf
@@ -8,7 +8,7 @@ const preencherFormulario = (endereco) =>{
 
 
 
-const pesquisarCep = async() => {
+const pesquisarCep = async () => {
 
   const cep = document.getElementById('txt-cep').value;
   const url = `https://viacep.com.br/ws/${cep}/json/`;
@@ -27,12 +27,12 @@ function validarEtapa01() {
   const nome = document.getElementById("txt-nome");
   const sobrenome = document.getElementById("txt-sobrenome");
   const nomeAnimal = document.getElementById("txt-nomeAnimal");
- 
+
   //selec
 
   const tipoAnimal = document.getElementById("select-tipo-animal");
   const porteAnimal = document.getElementById("select-porteAnimal");
- 
+
   //input error
 
   if (nome.value === "") {
@@ -50,7 +50,7 @@ function validarEtapa01() {
     nomeAnimal.className = "color-text-red-error";
     formularioValido = false;
   }
-  
+
 
   //select error
 
@@ -72,9 +72,9 @@ function validarEtapa01() {
     localStorage.setItem("nomeAnimal", String(nomeAnimal.value));
     localStorage.setItem("tipoAnimal", String(tipoAnimal.value));
     localStorage.setItem("porteAnimal", String(porteAnimal.value));
-    
+
     document.location.href = "pagina03.html";
-  
+
     // Limpar estilos de erro
     // if (nome.value !== "") {
     //   nome.style.border = "unset";
@@ -85,10 +85,10 @@ function validarEtapa01() {
 
 
 
-function validarEtapa02(){
+function validarEtapa02() {
 
   let formularioValido2 = true
-  
+
   const responsavel = document.getElementById("txt-responsavel");
   const cep = document.getElementById("txt-cep");
   const Bairro = document.getElementById("txt-Bairro");
@@ -96,7 +96,7 @@ function validarEtapa02(){
   const numero = document.getElementById("txt-numero");
   const NumeroTelefone = document.getElementById("txt-NumeroTelefone");
   const email = document.getElementById("txt-email");
-  
+
   //selec
 
   const estado = document.getElementById("select-estado");
@@ -160,9 +160,9 @@ function validarEtapa02(){
     localStorage.setItem("numero", String(numero.value));
     localStorage.setItem("numeroTelefone", String(NumeroTelefone.value));
     localStorage.setItem("email", String(email.value));
-    
+
     document.location.href = "pagina04.html"
-  
+
   }
 };
 

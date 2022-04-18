@@ -7,17 +7,19 @@
 input:focus-visible {
     outline: unset;
 }
-select:focus-visible{
+
+select:focus-visible {
     outline: unset;
 }
 
-body{
+body {
     margin: auto;
-    background-color:#2f4f4f;
+    background-color: #2f4f4f;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 20px;
 }
-main{
+
+main {
     display: block;
     min-width: 100px;
     max-width: 10000px;
@@ -26,51 +28,59 @@ main{
     justify-content: center;
     align-items: flex-end;
 }
-div{
+
+div {
     display: flex;
     flex-direction: column;
 }
-div.pequena{
+
+div.pequena {
     align-items: flex-end;
     min-width: 600px;
     width: 30%;
     padding-left: 300px;
 }
-div.index{
+
+div.index {
     display: flex;
     flex-direction: unset;
     justify-content: center;
     align-items: center;
 }
-div.pg3{
+
+div.pg3 {
     margin-top: 30px;
 }
-div.p{
+
+div.p {
     display: flex;
     flex-direction: row;
     justify-items: center;
     justify-content: space-around;
-    padding-top: 120px;  
+    padding-top: 120px;
 }
-input{
+
+input {
 
     font-size: 18px;
     padding-right: 200px;
-    padding-top:30px; 
-    padding-bottom:10px; ;
+    padding-top: 30px;
+    padding-bottom: 10px;
+    ;
     background-color: darkslategray;
-    border-bottom-left-radius:5px ;
+    border-bottom-left-radius: 5px;
     width: fit-content;
     border: unset;
     border-bottom: 2px solid dimgray;
 }
-select{
+
+select {
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-size: 18px;
     padding-right: 280px;
-    padding-top:20px;
+    padding-top: 20px;
     margin-top: 5px;
-    padding-bottom:10px;
+    padding-bottom: 10px;
     background-color: darkslategray;
     border-bottom-left-radius: 5px;
     border: unset;
@@ -78,79 +88,93 @@ select{
     width: fit-content;
     color: dimgray;
 }
-select.porteAnimal{
+
+select.porteAnimal {
     padding-right: 270px;
 }
-select.estado{
+
+select.estado {
     padding-right: 230px;
 }
-select.cidade{
+
+select.cidade {
     padding-right: 335px;
 }
-img.pequena{
+
+img.pequena {
     display: block;
     width: 100%;
     height: 30%;
 }
-img.index{
+
+img.index {
     display: unset;
     width: 40%;
     height: 30%;
 }
-h1{
+
+h1 {
     text-align: center;
     color: white;
     font-size: 50px;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
-h2{
+
+h2 {
     color: burlywood;
 }
-p{
+
+p {
     display: flex;
     justify-content: center;
     align-items: center;
 }
-button{
+
+button {
     padding-right: 200px;
     padding-left: 200px;
-    padding-top:20px ;
-    padding-bottom:20px ;
+    padding-top: 20px;
+    padding-bottom: 20px;
     border-radius: 50px;
     font-size: 25px;
-    background-color:white;
+    background-color: white;
 }
-a{
+
+a {
     color: dimgrey;
 }
-span{
+
+span {
     color: white;
     font-size: 40px;
     margin: 10px;
 }
 
 @media screen and (max-width:1350px) {
-    
-    div.pequena{
+
+    div.pequena {
         min-width: 500px;
         width: 25%;
         padding-left: 150px;
-    }  
-    
+    }
+
 }
+
 @media screen and (max-width:1200px) {
-   
-    main{
-        flex-direction:column-reverse;
+
+    main {
+        flex-direction: column-reverse;
         justify-content: center;
         align-items: center;
     }
-    body.index{
+
+    body.index {
         display: flex;
         flex-direction: column;
         padding: 10px;
     }
-    div{
+
+    div {
         display: flex;
         flex-direction: column;
         align-items: flex-start;
@@ -158,7 +182,8 @@ span{
         justify-content: center;
         padding-left: 100px;
     }
-    div.index{
+
+    div.index {
         display: unset;
         flex-direction: unset;
         align-items: unset;
@@ -167,133 +192,160 @@ span{
         flex-direction: unset;
         justify-content: center;
     }
-    div.pequena{
+
+    div.pequena {
         align-self: center;
         justify-content: center;
         min-width: 400px;
         width: 25%;
     }
-    img.index{
+
+    img.index {
         display: unset;
         width: 20%;
         height: 20%;
     }
-    img.pequena{
+
+    img.pequena {
         display: block;
         align-items: center;
         justify-content: center;
         width: 100%;
         height: 30%;
     }
-    select{
+
+    select {
         padding-right: 290px;
     }
-    select.porteAnimal{
+
+    select.porteAnimal {
         padding-right: 280px;
     }
-    p{
+
+    p {
         display: flex;
         justify-content: center;
         align-items: center;
     }
-    button{
+
+    button {
 
         padding-right: 200px;
         padding-left: 200px;
-        padding-top:10px ;
-        padding-bottom:10px ;
+        padding-top: 10px;
+        padding-bottom: 10px;
         border-radius: 50px;
         font-size: 25px;
-        background-color:white;
+        background-color: white;
     }
-    
+
 }
+
 @media screen and (max-width:860px) {
 
-    div{
+    div {
         padding-left: unset;
     }
-    div.pequena{
+
+    div.pequena {
         align-items: flex-end;
         min-width: 300px;
         width: 25%;
         padding-left: unset;
     }
-    input{
+
+    input {
         padding-right: 180px;
     }
-    select{
-        padding-right: 270px; 
+
+    select {
+        padding-right: 270px;
     }
-    select.porteAnimal{
-        padding-right: 260px; 
+
+    select.porteAnimal {
+        padding-right: 260px;
     }
-    select.estado{
+
+    select.estado {
         padding-right: 220px;
     }
-    select.cidade{
+
+    select.cidade {
         padding-right: 320px;
     }
 }
+
 @media screen and (max-width:860px) {
-    
-    select{
-        padding-right: 270px; 
+
+    select {
+        padding-right: 270px;
     }
-    select.porteAnimal{
-        padding-right: 260px; 
+
+    select.porteAnimal {
+        padding-right: 260px;
     }
-    select.estado{
+
+    select.estado {
         padding-right: 220px;
     }
-    select.cidade{
+
+    select.cidade {
         padding-right: 326px;
     }
 }
+
 @media screen and (max-width:425px) {
 
-    input{
+    input {
         font-size: 13px;
         padding-right: 80px;
-        padding-top:30px; 
-        padding-bottom:10px; 
+        padding-top: 30px;
+        padding-bottom: 10px;
     }
-    input.pg3{
+
+    input.pg3 {
         padding-right: 50px;
-        margin-left: 0px ;
+        margin-left: 0px;
     }
-    select{
+
+    select {
         font-size: 13px;
         padding-right: 140px;
     }
-    select.porteAnimal{
+
+    select.porteAnimal {
         padding-right: 130px;
     }
-    select.estado{
+
+    select.estado {
         padding-right: 80px;
     }
-    select.cidade{
+
+    select.cidade {
         padding-right: 160px;
     }
-    img.pequena{
+
+    img.pequena {
         display: block;
         width: 100%;
         height: 20%;
     }
-    h1{
+
+    h1 {
         text-align: center;
         color: white;
         font-size: 50px;
         font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     }
-    button{
+
+    button {
 
         padding-right: 100px;
         padding-left: 100px;
-        padding-top:10px ;
-        padding-bottom:10px ;
+        padding-top: 10px;
+        padding-bottom: 10px;
         border-radius: 50px;
         font-size: 15px;
-        background-color:white;
+        background-color: white;
     }
 }
